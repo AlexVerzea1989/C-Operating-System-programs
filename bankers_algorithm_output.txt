@@ -1,0 +1,77 @@
+An example of a successful run of bankers_algorithm:
+====================================================
+
+Processes = 10
+pid = 0
+Maxneed               	6 	9 	6 	10
+Allocation Request    	4 	0 	6 	5
+pid = 1
+Maxneed               	10 	8 	10 	12
+Allocation Request    	0 	6 	3 	7
+pid = 2
+Maxneed               	9 	9 	9 	11
+Allocation Request    	1 	5 	6 	4
+pid = 3
+Maxneed               	6 	5 	11 	6
+Allocation Request    	3 	2 	4 	4
+pid = 4
+Maxneed               	11 	11 	7 	7
+Allocation Request    	6 	0 	7 	3
+pid = 5
+Maxneed               	8 	10 	7 	9
+Allocation Request    	3 	5 	3 	7
+pid = 6
+Maxneed               	6 	12 	10 	7
+Allocation Request    	5 	3 	7 	6
+pid = 7
+Maxneed               	8 	10 	12 	11
+Allocation Request    	7 	4 	3 	5
+pid = 8
+Maxneed               	7 	10 	12 	5
+Allocation Request    	5 	7 	3 	1
+pid = 9
+Maxneed               	9 	10 	10 	12
+Allocation Request    	3 	0 	6 	4
+
+Ressource Available = 	48 	57 	57 	54
+
+The state is safe.
+Allocation Matrix:
+Processes: 	Resources:
+0 		4	0	6	5 
+1 		0	6	3	7 
+2 		1	5	6	4 
+3 		3	2	4	4 
+4 		6	0	7	3 
+5 		3	5	3	7 
+6 		5	3	7	6 
+7 		7	4	3	5 
+8 		5	7	3	1 
+9 		3	0	6	4 
+
+An example of rejected allocation:
+====================================================
+
+Processes = 7
+pid = 0
+Maxneed               	10 	9 	8 	6
+Allocation Request    	0 	7 	4 	4
+pid = 1
+Maxneed               	7 	6 	5 	7
+Allocation Request    	0 	3 	5 	4
+pid = 2
+Maxneed               	7 	7 	5 	6
+Allocation Request    	4 	3 	4 	0
+pid = 3
+Maxneed               	5 	10 	10 	10
+Allocation Request    	0 	3 	0 	5
+pid = 4
+Maxneed               	12 	8 	11 	12
+Allocation Request    	2 	2 	3 	4
+pid = 5
+Maxneed               	9 	8 	11 	9
+Allocation Request    	6 	4 	0 	1
+pid = 6
+Maxneed               	11 	5 	7 	7
+Allocation Request    	4 	6 	3 	4
+Request rejected because it is invalid. The request is more than the Maxneed.
